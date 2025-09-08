@@ -1,0 +1,47 @@
+{
+  "name": "sqlite.wasm",
+  "version": "3.47.0",
+  "type": "module",
+  "description": "SQLite database engine compiled to WebAssembly",
+  "main": "dist/node/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/node/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./browser": {
+      "import": "./dist/browser/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:simd && npm run build:fallback",
+    "build:simd": "./scripts/build-simd.sh",
+    "build:fallback": "./scripts/build-fallback.sh",
+    "build:wasm": "npm run build:simd",
+    "test": "node test/performance_test.js",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "sqlite",
+    "database",
+    "sql",
+    "wasm",
+    "webassembly",
+    "embedded-db"
+  ],
+  "author": "Superstruct WASM Contributors",
+  "license": "Public Domain",
+  "files": [
+    "build/",
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superstruct/sqlite.wasm.git"
+  },
+  "homepage": "https://github.com/superstruct/sqlite.wasm"
+}
