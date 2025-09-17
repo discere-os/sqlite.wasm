@@ -1,14 +1,14 @@
-<h1 align="center">SQLite Source Repository</h1>
+# @discere-os/sqlite.wasm
 
-This repository contains the complete source code for the
-[SQLite database engine](https://sqlite.org/), including
-many test scripts.  However, other test scripts
-and most of the documentation are managed separately.
+WebAssembly port of SQLite - Self-contained SQL database engine with comprehensive transaction support.
 
-See the [on-line documentation](https://sqlite.org/) for more information
-about what SQLite is and how it works from a user's perspective.  This
-README file is about the source code that goes into building SQLite,
-not about how SQLite is used.
+[![CI/CD](https://github.com/discere-os/discere-nucleus/actions/workflows/sqlite-wasm-ci.yml/badge.svg)](https://github.com/discere-os/discere-nucleus/actions)
+[![JSR](https://jsr.io/badges/@discere-os/sqlite.wasm)](https://jsr.io/@discere-os/sqlite.wasm)
+[![npm version](https://badge.fury.io/js/@discere-os%2Fsqlite.wasm.svg)](https://badge.fury.io/js/@discere-os%2Fsqlite.wasm)
+[![License](https://img.shields.io/badge/License-Public--Domain-blue.svg)](LICENSE.md)
+[![Status](https://img.shields.io/badge/status-alpha-orange.svg)](https://github.com/discere-os/discere-nucleus)
+
+This repository contains the complete source code for the SQLite database engine.
 
 ## Version Control
 
