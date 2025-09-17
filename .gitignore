@@ -47,3 +47,8 @@ build-*
 coverage/
 .nyc_output/
 test-results/
+
+# Deno build artifacts
+npm/
+install/
+build-dual*/
